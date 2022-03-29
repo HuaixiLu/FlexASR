@@ -19,7 +19,9 @@ Catapult HLS Tool Use
   ## SystemC (2.3.1)
   Install it through the github repo of the [systemC](https://github.com/accellera-official/systemc)
   ```bash
+  mkdir build && cd build
   cmake .. -DCMAKE_CXX_STANDARD=11 -DCAMKE_INSTALL_PREFIX=/u/xxx/local/systemc-2.3.1
+  make install
   export LD_LIBRARY_PATH="/u/huaixil/local/systemc-2.3.1/lib64:$LD_LIBRARY_PATH"
   ```
   ## Boost (1.55.0)
